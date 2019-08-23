@@ -8,7 +8,7 @@ const StripeCheckoutButton = ({ price }) => {
 
     const onToken = token => {
         axios({
-            url: process.env.REACT_APP_API_URI + "payment/stripe",
+            url: process.env.REACT_APP_API_URI + "/payment/stripe",
             method: "post",
             data: {
                 amount: priceForStripe,
